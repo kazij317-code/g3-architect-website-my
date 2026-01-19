@@ -1,0 +1,114 @@
+:root {
+    --bg-color: #05060f;
+    --card-bg: #111322;
+    --accent: #4f46e5;
+    --text-main: #ffffff;
+    --text-muted: #94a3b8;
+}
+
+/* body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    padding: 60px 20px;
+} */
+
+/* img{
+    width: 100%;
+            height: 100%; */
+            
+
+
+.bento-grid {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* The Grid System */
+.bento-grid {
+    display: grid;
+    gap: 20px;
+    /* 3-column layout by default on desktop */
+   grid-template-columns: repeat(3, 200px);
+            /* grid-template-rows: repeat(6, 200px); */
+            /* (5) */
+            grid-template-rows: repeat(3, 100px);
+}
+
+
+
+.card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+}
+
+.card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Feature Specific Spans */
+.normal-layout{
+    grid-column: span 1; /* Takes up 2 columns */
+    grid-row: span 2;    /* Takes up 2 rows */
+    background: linear-gradient(135deg, #111322 0%, #1e1b4b 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.wide-layout {
+    grid-column: span 2; /* Takes up 2 columns at the bottom */
+    grid-row: span 1; 
+    flex-direction: column;    
+}
+
+/* Responsive Rules */
+@media (max-width: 900px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .bento-grid {
+        grid-template-columns: 1fr; /* 1 column for phones */
+    }
+    
+    .card-large, .card-wide {
+        grid-column: span 1; /* Reset spans on mobile */
+    }
+}
+
+.badge {
+    background: var(--accent);
+    width: fit-content;
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
