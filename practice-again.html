@@ -9,14 +9,15 @@
 </head>
 
 <body class="inter-font">
-    <header class="bg-light">
-        <!-- Navbar -->
+    <header class="">
+        <!-- ====================NAVBAR SECTION=======================-->
         <nav class="navbar display-flex">
             <img src="./images/Frame 2087326363.png" alt="">
             <!-- <h1 class="brand">Tech<span class="red">Wave</span></h1> -->
-            
-            <img class="hamburger" src="./images/assets/hamburger-menu.png" alt="">
-            
+
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">☰</label>
+
             <ul class="nav-links display-flex">
                 <li class="nav-item"><a href="" class="nav-link text-white"> About</a></li>
                 <li class="nav-item"><a href="" class="nav-link text-white">Episodes</a></li>
@@ -25,21 +26,21 @@
             <button class="gradient-btn desktop-only">
                 Subscribe →
             </button>
-            
+
             <!-- <div class="break-line">
                 <hr>
             </div> -->
         </nav>
-        <!-- Banner Section -->
-        <section class="bg-light">
+        <!--==================BANNER SECTION===================-->
+        <section class="">
             <div class="banner">
                 <div class="banner-content">
                     <button class="box ch-button">New</button>
                     <img class="box micro" src="./images/assets/microphone.png" alt="">
 
                     <img class="box hero-circle" src="./images/assets/hero-circle.png" alt="">
-                    
-                    
+
+
                     <h1 class="banner-title">TechWave
                     </h1>
                     <p class="banner-description text-white">Your daily dose of tech insights, productivity hacks, and
@@ -57,44 +58,53 @@
         </section>
     </header>
     <main>
-        <!-- About Section -->
+        <!--==================ABOUT SECTION==================-->
         <section>
-            <div class="banner-content">
-                <h1 class="banner-title">TechWave
-                </h1>
-                <p class="banner-description text-white">Your daily dose of tech insights, productivity hacks, and
-                    personal growth</p>
+            <div class="about">
+                <h3 class="ab-title text-white">About the Podcast
+                </h3>
+                <p class="about-text text-white">TechWave is your go-to podcast for staying ahead in
+                    the fast-paced world of technology.
+                    <br><br>We break down complex topics into digestible insights, explore productivity strategies that
+                    actually
+                    work,
+                    <br><br>and share stories of personal growth from industry leaders.
+                    <br><br><br>
+                    Join thousands of young professionals and tech enthusiasts who start their day with TechWave.
+                </p>
             </div>
-
+            <div class="break-line">
+                <hr>
+            </div>
             <div class="facts-container">
                 <div class="fact-card display-flex">
                     <div>
                         <h4 class="fact-number">105K+</h4>
-                        <h5 class="fact-name text-gray">Monthly Listeners</h5>
+                        <h5 class="fact-name text-gray">MONTHLY LISTENERS</h5>
                     </div>
                 </div>
                 <div class="fact-card display-flex">
                     <div>
-                        <h4 class="fact-number">105K+</h4>
-                        <h5 class="fact-name text-gray">Monthly Listeners</h5>
+                        <h4 class="fact-number">200+</h4>
+                        <h5 class="fact-name text-gray">EPISODE PUBLISHED</h5>
                     </div>
                 </div>
                 <div class="fact-card display-flex">
                     <div>
-                        <h4 class="fact-number">105K+</h4>
-                        <h5 class="fact-name text-gray">Monthly Listeners</h5>
+                        <h4 class="fact-number">4.9★</h4>
+                        <h5 class="fact-name text-gray">AVERAGE RATING </h5>
                     </div>
                 </div>
                 <div class="fact-card display-flex">
                     <div>
-                        <h4 class="fact-number">105K+</h4>
-                        <h5 class="fact-name text-gray">Monthly Listeners</h5>
+                        <h4 class="fact-number">50+</h4>
+                        <h5 class="fact-name text-gray">INDUSTRY EXPERTS</h5>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Why Choose Section -->
-        <section>
+<!--==========WHY CHOOSE SECTION==================-->
+        <section class="color">
             <div class="container text-white">
                 <h2>Why Choose TechWave</h2>
 
@@ -102,27 +112,27 @@
 
             <div class="bento-grid text-white">
                 <div class="card normal-layout">
-                    <img src="" alt="" class="fact-icon">
-                    <h3>Premium Audio Quality</h3>
+                    <img class="ch-im" src="./images/assets/headphone.png" alt="" class="fact-icon">
+                    <h2>Premium Audio Quality</h3>
                     <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio
                         engineering. Every episode is mastered for optimal listening across all devices and platforms.
                     </p>
                 </div>
 
                 <div class="card wide-layout">
-                    <img src="" alt="" class="fact-icon">
+                    <img class="ch-im" src="./images/assets/device.png" alt="" class="fact-icon">
                     <h3>Mobile Friendly</h3>
                     <p>Listen on the go with seamless mobile experience and offline downloads.</p>
                 </div>
 
                 <div class="card wide-layout">
-                    <img src="" alt="" class="fact-icon">
+                    <img class="ch-im" src="./images/assets/location.png" alt="" class="fact-icon">
                     <h3>Global Community</h3>
                     <p>Connect with tech enthusiasts from over 120 countries worldwide. </p>
                 </div>
 
                 <div class="card wide-layout">
-                    <img src="" alt="" class="fact-icon">
+                    <img class="ch-im" src="./images/assets/zap-fast.png" alt="" class="fact-icon">
                     <h3>Exclusive Interviews</h3>
                     <p>Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host
                         secures exclusive conversations you won't find anywhere else, diving deep into their journeys,
@@ -130,13 +140,13 @@
                 </div>
 
                 <div class="card small-layout">
-                    <img src=" " alt="" class="fact-icon">
+                    <img class="ch-im" src="./images/assets/resource.png" alt="" class="fact-icon">
                     <h3>Rich Resources</h3>
                     <p>Access show notes, transcripts, and additional learning materials for every episode.</p>
                 </div>
             </div>
         </section>
-        <!-- Featured Episodes Section -->
+<!-- ==========FEATURED EPISODES SECTION=========-->
 
         <section>
             <div class="container bg-light width text-white">
@@ -178,7 +188,7 @@
 
                     </div>
                 </div>
-
+<!-- HOST -->
                 <div class="host text-white">
                     <div class="host-container">
                         <h2>Meet the Host</h2>
@@ -197,7 +207,7 @@
                                     grow in
                                     tech.
                                 </p>
-                                <img src="./images/assets/linkedin.png" alt="">
+                                <img class="icon" src="./images/assets/linkedin.png" alt="">
                                 <img src="./images/assets/x.png" alt="">
                                 <img src="./images/assets/instagram.png" alt="">
                                 <img src="./images/assets/youtube.png" alt="">
